@@ -4,9 +4,10 @@ import cors from 'cors'
 import { Configuration, OpenAIApi } from 'openai'
 
 dotenv.config()
+console.log(process.env.OPENAI_API_KEYR)
 
 const configuration = new Configuration({
-  apiKey: process.env.OPENAI_API_KEY,
+  apiKey: process.env.OPENAI_API_KEYR,
 });
 
 const openai = new OpenAIApi(configuration);
@@ -19,7 +20,7 @@ app.get('/', async (req, res) => {
   res.status(200).send({
     message: 'Hello from CodeX!'
   })
-})
+}) 
 
 app.post('/', async (req, res) => {
   try {
