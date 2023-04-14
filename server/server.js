@@ -20,7 +20,7 @@ app.get('/', async (req, res) => {
   res.status(200).send({
     message: 'Hello from CodeX!'
   })
-})  
+})   
  
 app.post('/', async (req, res) => {
   try {
@@ -47,4 +47,4 @@ app.post('/', async (req, res) => {
 })
 
 app.listen(5000, () => console.log('AI server started on http://localhost:5000'))
-    
+     
