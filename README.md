@@ -1,6 +1,6 @@
 Codex AI app ...
 Turn your imagination into reality
-====================================================================================
+
 
 VERSEL deploye Frontend
 #https://codex-lilac.vercel.app/
